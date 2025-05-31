@@ -3,18 +3,19 @@
 
 /*================== VARIABLE CSS ==================*/
 :root {
-    --hue: 165;
-    --first-color: hsl(var(--hue), 60%, 40%);
-    --title-color: hsl(var(--hue), 4%, 12%);
-    --text-color: hsl(var(--hue), 4%, 20%);
-    --body-color: hsl(var(--hue), 30%, 92%);
-    --container-color: hsl(0, 0%, 100%);
-    --border-color: hsl(var(--hue), 4%, 16%);
+    /* New Interactive Color Palette */
+    --hue: 278; /* Purple base */
+    --first-color: hsl(var(--hue), 80%, 60%);         /* Vibrant Purple */
+    --title-color: hsl(210, 15%, 18%);                /* Deep Navy */
+    --text-color: hsl(210, 10%, 32%);                 /* Slate Gray */
+    --body-color: hsl(220, 38%, 97%);                 /* Soft Blue-Gray */
+    --container-color: hsl(0, 0%, 100%);              /* Pure White */
+    --border-color: hsl(var(--hue), 40%, 80%);        /* Soft Lavender */
     --white-color: hsl(0, 0%, 100%);
-    --shadow-color: hsla(var(--hue), 80%, 10%, 0.2);
+    --shadow-color: hsla(var(--hue), 80%, 60%, 0.12); /* Light Purple Shadow */
 
     /* Font Family */
-    --body-font: 'Jost', sans-serif; /* Fixed typo: "sans-sarif" to "sans-serif" */
+    --body-font: 'Jost', sans-serif;
     --second-font: 'Montserrat Alternates', sans-serif;
 
     /* Font Sizes */
@@ -55,11 +56,11 @@
 /*================== DARK THEME ==================*/
 .dark {
     --title-color: hsl(0, 0%, 100%);
-    --text-color: hsl(0, 0%, 92%);
-    --body-color: hsl(var(--hue), 10%, 8%);
-    --container-color: hsl(var(--hue), 10%, 16%);
-    --border-color: hsl(var(--hue), 4%, 65%);
-    --shadow-color: hsla(var(--hue), 0%, 100%, 0.2);
+    --text-color: hsl(220, 20%, 85%);
+    --body-color: hsl(var(--hue), 30%, 10%);
+    --container-color: hsl(var(--hue), 30%, 18%);
+    --border-color: hsl(var(--hue), 40%, 40%);
+    --shadow-color: hsla(var(--hue), 80%, 60%, 0.18);
 }
 
 .dark .shape {
@@ -1258,7 +1259,7 @@ resume-title {
     }
 
     .home-banner {
-        margin-block:2.5rem ;
+        margin-block: 2.5rem;
     }
 
     .home-data {
@@ -1311,6 +1312,7 @@ resume-title {
     }
 }
 
+/* For medium-large devices */
 @media screen and (max-width: 1024px) {
     .nav {
         height: 4rem;
@@ -1357,7 +1359,6 @@ resume-title {
         width: 100%;
         margin-inline: auto;
     }
-      
 }
 
 /* For medium devices */
@@ -1407,6 +1408,7 @@ resume-title {
     }
 }
 
+/* For small devices */
 @media screen and (max-width: 576px) {
     .container {
         padding-inline: 1.25rem;
@@ -1433,7 +1435,7 @@ resume-title {
     }
 }
 
-/* For small devices */
+/* For extra small devices */
 @media screen and (max-width: 400px) {
     .nav-menu {
         padding: 6rem;
